@@ -6,4 +6,4 @@ Create nagios config:
 Copy nagios config:
   module.run:
     - name: cp.push
-    - path: /tmp/nagios/config.cfg
+    - path: /tmp/config.cfg
