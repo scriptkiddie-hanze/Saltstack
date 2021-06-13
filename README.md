@@ -1,7 +1,7 @@
 # Saltstack
 Saltstack repo for project 2.4
 
-#Cloud.init code
+# Cloud.init
 Cloud init code for creating VM on azure and auto connect to Saltstack master
 
 apt-get update -y
