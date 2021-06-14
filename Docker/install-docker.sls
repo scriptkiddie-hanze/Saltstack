@@ -1,4 +1,4 @@
-Install al needed packages to run Docker server:
+Install all needed packages to run Docker server:
   pkg.installed:
   - pkgs:
     - docker.io
