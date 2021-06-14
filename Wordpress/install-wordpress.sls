@@ -24,8 +24,8 @@ Create database for Wordpress:
     - name: wordpress
 
   mysql_user.present:
-    - name: wordpress
-    - password: p4ssw0rd
+    - name: '{{ salt['pillar.get']('wp-config:username', '') }}'
+    - password: '{{ salt['pillar.get']('wp-config:password', '') }}'
 
   mysql_grants.present:
     - database: wordpress.*
