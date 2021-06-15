@@ -8,9 +8,5 @@ deploy the server.conf file:
     - source: salt://syslog-ng/server.conf
 
 reload syslog-ng server:
-  service.running:
-    - name: syslog-ng
-    - enable: True
-    - reload: True
-    - require:
-      - pkg: syslog-ng
+  cmd.run:
+    - name: systemctl restart syslog-ng
