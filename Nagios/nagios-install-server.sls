@@ -88,3 +88,7 @@ Reload nagios for nagios:
     - name: nagios
     - enable: True
     - reload: True
+
+Reload apache2 for nagios to work:
+  cmd.run:
+    - name: systemctl restart apache2
