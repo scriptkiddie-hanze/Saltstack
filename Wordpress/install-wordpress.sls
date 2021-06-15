@@ -65,7 +65,5 @@ Download and unpack/install Wordpress:
     - mode: 644
 
 reload nginx:
-  service.running:
-    - name: nginx
-    - enable: True
-    - restart: True
+  cmd.run:
+    - name: systemctl restart nginx.service
